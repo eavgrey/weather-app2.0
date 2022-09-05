@@ -5,15 +5,15 @@ let btn = document.getElementById('btn')
 
 let input = document.getElementById('input')
 
-let switchBtn = document.getElementById('switch')
-let switchBall = document.getElementById('switch-ball') 
+//slet switchBtn = document.getElementById('switch')
+//let switchBall = document.getElementById('switch-ball') 
 
 
 
 let getWeatherByGeo = () =>{
-  switchBall.style.backgroundColor = ' #3f51b5'
-  switchBtn.style.justifyContent = 'flex-end'
-  switchBall.style.marginRight = ' 7px'
+  //switchBall.style.backgroundColor = ' #3f51b5'
+  //switchBtn.style.justifyContent = 'flex-end'
+ // switchBall.style.marginRight = ' 7px'
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position);
@@ -64,6 +64,6 @@ let getWeather = () => {
 
 
 
-switchBtn.addEventListener("click", getWeatherByGeo)
+//switchBtn.addEventListener("click", getWeatherByGeo)
 
 btn.addEventListener("click", getWeather)

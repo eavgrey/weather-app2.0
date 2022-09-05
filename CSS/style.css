@@ -83,6 +83,11 @@ header {
   }
   #btn {
     margin-top: 5px;
+    width: 80%;
+  }
+  #input {
+    width: 80%;
+    margin: 0;
   }
   #output-container {
     margin-top: 20px;
@@ -99,22 +104,62 @@ header {
     display: block;
   }
 }
-.nav-bar {
+.wrapper-bar {
   margin-right: 20px;
 }
-.switch {
-  cursor: pointer;
-  background: #03a9f4ad;
-  width: 60px;
-display: flex;
-  height: 30px;
- border-radius: 999px;
- align-items: center;
+.wrapper-title{
+  margin: 0;
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+margin-top: 5px;
 }
-.switch-ball {
-  background-color: #fff;
-  width: 20px;
-  height: 20px;
+
+.toggler-wrapper {
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggler-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggler-wrapper input[type="checkbox"]:checked + .toggler-slider {
+  background-color: #44cc66;
+}
+
+.toggler-wrapper .toggler-slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.toggler-wrapper.style-1
+  input[type="checkbox"]:checked
+  + .toggler-slider
+  .toggler-knob {
+  left: calc(100% - 19px - 3px);
+}
+
+.toggler-wrapper.style-1 .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
   border-radius: 50%;
-  margin-left: 5px;
+  left: 3px;
+  top: 3px;
+  background-color: #fff;
 }
