@@ -11,6 +11,9 @@ header {
   background-color: #3f51b5;
   border: 2px solid #03a9f4ad;
   border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .container {
   text-align: center;
@@ -95,4 +98,23 @@ header {
   .container {
     display: block;
   }
+}
+.nav-bar {
+  margin-right: 20px;
+}
+.switch {
+  cursor: pointer;
+  background: #03a9f4ad;
+  width: 60px;
+display: flex;
+  height: 30px;
+ border-radius: 999px;
+ align-items: center;
+}
+.switch-ball {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 5px;
 }
