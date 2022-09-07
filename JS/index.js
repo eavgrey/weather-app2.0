@@ -49,12 +49,12 @@ let getWeatherByGeo = () =>{
   })
 }
 }
-
-let getWeather = () => {
+let getWeather = (event) => {
   let city = input.value;
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
   input.value = ''
     getFetch(url)
+    event.preventDefault()
 }
 
 let form = document.getElementById('form')
