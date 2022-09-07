@@ -27,16 +27,27 @@
     </header>
     <div class="container">
         <p class="title">Weather</p>
+     
         <div class="search-bar">
-        <input
-          type="text"
-          id="input"
-          class="search"
-          placeholder="Enter city name"
-        />
+          <form id="form">  
+            <input
+            type="text"
+            id="input"
+            class="search"
+            placeholder="Enter city name"
+                />
+         </form>
+            
         <button type="submit" id="btn" class="search">Submit</button>
+       
       </div>
+      
       <div id="output-container"></div>
+      <div class="container">
+        <div id="loader">
+         <img id="loader-img" src="/1_vJ36JB2HYLvsVNZvxuc51A.gif" alt="">
+        </div>
+      </div>
     </div>
 
     <script src="/JS/index.js"></script>

@@ -34,6 +34,7 @@ header {
   border-bottom: 2px solid grey;
   border-radius: 5px;
   margin-right: 5px;
+  width: 326px;
 }
 #btn {
   color: white;
@@ -41,6 +42,7 @@ header {
   background-color: #3f51b5;
   border-bottom: 2px solid grey;
   border-radius: 5px;
+  width: 330px;
 }
 #output-container {
   color: white;
@@ -67,8 +69,7 @@ header {
 }
 .search-bar {
   display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+flex-direction: column;  margin-bottom: 40px;
 }
 
 @media (max-width: 500px) {
@@ -107,12 +108,12 @@ header {
 .wrapper-bar {
   margin-right: 20px;
 }
-.wrapper-title{
+.wrapper-title {
   margin: 0;
   color: white;
   margin-right: 10px;
   font-size: 25px;
-margin-top: 5px;
+  margin-top: 5px;
 }
 
 #geo-btn {
@@ -123,6 +124,27 @@ margin-top: 5px;
   cursor: pointer;
 }
 #geo-btn:hover {
-  background-color:#002ead;
+  background-color: #002ead;
   transition: 0.7s;
+}
+#form{
+  height: 60px;
+}
+#loader{
+  display: none;
+  
+}
+#loader.show {
+  display: block;
+}
+.container {
+  width: 100%;
+}
+#loader-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
 }
